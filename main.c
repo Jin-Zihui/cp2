@@ -127,7 +127,7 @@ void figure()
             printf("E\n");
             break;
         }
-        int cmpRes = cmpTs(tTS, sign);
+        int cmpRes = cmpTS(tTS, sign);
         if (cmpRes == 0 || cmpRes == -2)
         {
             printf("E\n");
