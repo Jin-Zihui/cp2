@@ -163,9 +163,9 @@ void figure()
 
 int main(int argc, char *argv[])
 {
-    // freopen(argv[1], "r", stdin);
+    freopen(argv[1], "r", stdin);
     scanf("%s", str);
     figure();
-    // fclose(stdin);
+    fclose(stdin);
     return 0;
 }
