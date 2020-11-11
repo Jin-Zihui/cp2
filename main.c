@@ -22,13 +22,10 @@ int pM[6][6] = {
     {-1, -1, -1, -1, 0, 2}
 };
 
-int main(int argc, char *argv[])
+
+int sum(int a, int b)
 {
-    freopen(argv[1], "r", stdin);
-    scanf("%s", str);
-    figure();
-    fclose(stdin);
-    return 0;
+    return a + b;
 }
 
 void updTTS()
@@ -47,12 +44,18 @@ int cmpTS(char ca, char cb)
     int i;
     for (i = 0; i < 6; i++)
         if (tS[i] == ca)
+        {
             na = i;
+            break;
+        }
     if(i==6) na = -1;
     
     for (i = 0; i < 6; i++)
         if (tS[i] == cb)
+        {
             nb = i;
+            break;
+        }
     if(i==6) nb = -1;
 
     if (na == -1 || nb == -1)
@@ -158,7 +161,11 @@ void figure()
     }
 }
 
-int sum(int a, int b)
+int main(int argc, char *argv[])
 {
-    return a + b;
+    // freopen(argv[1], "r", stdin);
+    scanf("%s", str);
+    figure();
+    // fclose(stdin);
+    return 0;
 }
